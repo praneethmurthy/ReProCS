@@ -1,0 +1,5 @@
+#exclude MATLAB temp files
+*.m~
+
+#exclude videos, photos etc
+*.avi, *.jpg, *.jpeg, *.eps, *.pdf
