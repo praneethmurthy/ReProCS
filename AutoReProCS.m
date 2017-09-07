@@ -4,6 +4,15 @@ function [L_hat, P_hat, S_hat, T_hat, t_hat, ...
 %%%This is the automatic version of ReProCS algorithm under the latest
 %%%subspace change and support model. 
 
+%This folder contains the code accompanying pre-print.
+%
+%[1] "New Results for Provable Dynamic Robust PCA", Praneeth Narayanamurthy and Namrata Vaswani, arXiv:1705.08948, 2017.
+%
+%If you use this code please also cite the following papers
+%[2] "An online algorithm for separating sparse  and low-dimensional signal sequences from their sum", Han Guo, Chenlu Qiu, and Namrata Vaswani, IEEE Trans. Sig. Proc., 2014.
+%[3] "Recursive Robust PCA or Recursive Sparse Recovery in Large but Structure Noise", Chenlu Qiu, Namrata Vaswani, Brain Lois, and Leslie Hogben, IEEE Trans. Info. Theory., 2014.
+%[4] "Real-time Robust Principal Components' Pursuit", Chenlu Qiu, and Namrata Vaswani, Allerton, 2010.
+
 
 %%%                          Inputs                         %%%
 %%%     M - measurement matrix                              %%%
