@@ -1,6 +1,10 @@
-This folder contains the code accompanying the paper 
+This folder contains the code accompanying pre-print.
 
 [1] "New Results for Provable Dynamic Robust PCA", Praneeth Narayanamurthy and Namrata Vaswani, arXiv:1705.08948, 2017.
+
+If you use this code please also cite the following papers
+[2] "An online algorithm for separating sparse  and low-dimensional signal sequences from their sum", Han Guo, Chenlu Qiu, and Namrata Vaswani, IEEE Trans. Sig. Proc., 2014.
+[3] "Recursive Robust PCA or Recursive Sparse Recovery in Large but Structure Noise", Chenlu Qiu, Namrata Vaswani, Brain Lois, and Leslie Hogben, IEEE Trans. Info. Theory., 2014.
 
 List of main files:
 1. DemoFB.m - Wrapper containing the real video foreground background separation. The sparse recovery step here uses ell-1 minimization. 
@@ -9,7 +13,7 @@ List of main files:
 4. ReProCS_real - main function which implements the ReProCS algorithm using ell-1.
 
 Folders:
-Data folder (120 MB) contains .mat files for videos. Pushing this too, because the original source web-page is down.
+Data folder (120 MB) contains .mat files for videos. Pushing this too, because the original source web-page (http://perception.i2r.a-star.edu.sg/bk_model/bk_index.html) is down.
 YALL1 - folder containing files to implement ell-1 minimization.
 
 
