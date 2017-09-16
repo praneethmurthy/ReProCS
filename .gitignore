@@ -3,3 +3,7 @@
 
 #exclude videos, photos etc
 *.avi, *.jpg, *.jpeg, *.eps, *.pdf
+
+#exclude temporary files
+demo_fb_reprocs_pca.m
+ReProCS_pca_real.m
