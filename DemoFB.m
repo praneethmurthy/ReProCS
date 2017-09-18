@@ -17,8 +17,8 @@ close all
 addpath('YALL1_v1.4/');
 addpath('PROPACK/');
 
-load('Data/Lobby.mat');
-I = M;
+load('Data/Curtain.mat');
+%I = M;
 
 
 %% Training data processing

@@ -5,5 +5,6 @@
 *.avi, *.jpg, *.jpeg, *.eps, *.pdf
 
 #exclude temporary files
-demo_fb_reprocs_pca.m
-ReProCS_pca_real.m
+wrapper_compare_real_videos.m
+figures_new/
+data/
