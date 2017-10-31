@@ -1,5 +1,5 @@
 function [BG, FG, L_hat, S_hat, T_hat, t_hat, ...
-    P_track_full, P_track_new, T_calc]= ...
+    P_track_full, T_calc]= ...
     ReProCS_pca_real(M1, P_init, mu, ev_thresh, alpha, K)
 %%%This is the ReProCS-PCA algorithm. This is the main function for the real video Background-
 %%%Foreground separation problem. 
@@ -40,8 +40,7 @@ function [BG, FG, L_hat, S_hat, T_hat, t_hat, ...
 
 P_hat_old = P_init;
 [~, r] = size(P_init);
-P_hat_new = [];
-P_hat = [P_hat_old, P_hat_new];
+P_hat = P_hat_old;
 
 [n, t_max] = size(M1);
 T_hat = zeros(n, t_max);
@@ -103,9 +102,7 @@ for ii = 2 : t_max
                 k = k + 1;
                 
                 if(k==K + 1)
-                    P_hat = [P_hat_old, P_hat_new];
                     P_hat_old = P_hat;
-                    P_hat_new = [];
                     k = 1;
                     ph = 0;
                     phi_t = speye(n) - P_hat * P_hat';
@@ -116,12 +113,10 @@ for ii = 2 : t_max
     %% Return subspace estimates
     if((ii == 0) || (~(mod(ii - 1, alpha))))
         P_track_full{cnt} = P_hat;
-        P_track_new{cnt} = P_hat_new;
+        %P_track_new{cnt} = P_hat_new;
         T_calc(cnt) = ii;
         cnt = cnt + 1;
     end
 end
 %L_hat = L_hat + repmat(mu, n, 1);
 end
-
-

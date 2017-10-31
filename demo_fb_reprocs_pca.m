@@ -16,7 +16,7 @@ close all
 
 addpath('YALL1_v1.4/');
 
-load('Data/SwitchLight.mat');
+load('Data/Curtain.mat');
 %I = M;
 
 
@@ -60,14 +60,14 @@ alpha = 60;
 
 tic
 fprintf('alpha = %d\tK = %d\n', alpha, K);
-[BG, FG, L_hat, S_hat, T_hat, t_hat, P_track_full, P_track_new] ...
+[BG, FG, L_hat, S_hat, T_hat, t_hat, P_track_full] ...
     = ReProCS_pca_real(I(:, t_train + 1 : end), ...
-    L_init, mu, ev_thresh, alpha, K, rank_init);
+    L_init, mu, ev_thresh, alpha, K);
 toc
 
-save('data/reprocs_pca_sl_test.mat')
+%save('data/reprocs_pca_sl_test.mat')
 
-% VidName = ['Curtain_AutoReProCS_InitAltProj_alpha', num2str(alpha), ...
-%     '_rank', num2str(rank_init)];
-% DisplayVideo(I(:, t_train + 1 : end), FG, BG, T_hat, imSize, VidName);
+VidName = ['Curtain_AutoReProCS_InitAltProj_alpha', num2str(alpha), ...
+    '_rank', num2str(rank_init)];
+DisplayVideo(I(:, t_train + 1 : end), FG, BG, T_hat, imSize, VidName);
 
