@@ -1,6 +1,9 @@
 #exclude MATLAB temp files
 *.m~
 
+#exclude vim swp files
+*.swp
+
 #exclude videos, photos etc
 *.avi, *.jpg, *.jpeg, *.eps, *.pdf
 
