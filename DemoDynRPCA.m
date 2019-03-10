@@ -1,7 +1,7 @@
 %%%Demo to implement the automatic ReProCS algorithm for simulated data.
 %This folder contains the code accompanying pre-print.
 %
-%[1] "New Results for Provable Dynamic Robust PCA", Praneeth Narayanamurthy and Namrata Vaswani, arXiv:1705.08948, 2017.
+%[1] "Provable Dynamic Robust PCA or Robust Subspace Tracking", Praneeth Narayanamurthy and Namrata Vaswani, IEEE Trans. Info. Theory, 2019.
 %
 %If you use this code please also cite the following papers
 %[2] "An online algorithm for separating sparse  and low-dimensional signal sequences from their sum", Han Guo, Chenlu Qiu, and Namrata Vaswani, IEEE Trans. Sig. Proc., 2014.

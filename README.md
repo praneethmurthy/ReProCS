@@ -1,6 +1,6 @@
 This folder contains the code accompanying pre-print.
 
-[1] "New Results for Provable Dynamic Robust PCA", Praneeth Narayanamurthy and Namrata Vaswani, arXiv:1705.08948, 2017.
+[1] "Provable Dynamic Robust PCA or Robust Subspace Tracking", Praneeth Narayanamurthy and Namrata Vaswani, IEEE Trans. Info. Theory, 2019 (available at arXiv:1705.08948).
 
 If you use this code please also cite the following papers
 
